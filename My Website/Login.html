@@ -1,0 +1,66 @@
+<!doctype html>
+<?php
+         $con = mysqli_connect("csmysql.cs.cf.ac.uk", "c1639991", "deopadjek9", "c1639991");
+         $retrieve = "SELECT id, make, model,images, year, mileage, price, description FROM Cars";
+         $result = mysqli_query($con, $retrieve);
+
+         
+         	
+         ?>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kusal's Games</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+    
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kusal's Games</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="row">
+			<div class="col">
+				<img class="style-logo" src="images/logo.png" alt="Kusal's Games">
+				<nav class="style-nav">
+					<ul>
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="Login.html" class="current">Login</a></li>
+						<li><a href="Games.html">Games</a></li>
+						<li><a href="Basket.html">Basket</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+   
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<footer>
+		<div class="row">
+			<div class="col">
+				<p class="footer-text">Kusal Dissanayake</p>
+				<p class="footer-text"></p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

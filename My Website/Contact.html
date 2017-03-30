@@ -1,0 +1,80 @@
+<!doctype html>
+<?php
+         $con = mysqli_connect("csmysql.cs.cf.ac.uk", "c1639991", "deopadjek9", "c1639991");
+         $retrieve = "SELECT id, make, model,images, year, mileage, price, description FROM Cars";
+         $result = mysqli_query($con, $retrieve);
+
+         
+         	
+         ?>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kusal's Games</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kusal's Games</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="row">
+			<div class="col">
+				<img class="style-logo" src="images/logo.png" alt="Kusal's Games">
+				<nav class="style-nav">
+					<ul>
+						<li><a href="Home.html" class="current">Home</a></li>
+						<li><a href="Login.html">Login</a></li>
+						<li><a href="Games.html">Games</a></li>
+						<li><a href="Basket.html">Basket</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Contact Us</h3>
+    <h4>Contact us for info</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Contact Preference (optional)" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+	
+	<footer>
+		<div class="row">
+			<div class="col">
+				<p class="footer-text">Kusal Dissanayake</p>
+				<p class="footer-text"></p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
